@@ -1,10 +1,6 @@
-def pattern(n):
-    for i in range(n):
-        for j in range(n):
-            if(j==0 or j==n-1) or (i==j):
-                print("*",end=" ")
-            else:
-                print(" ",end=" ")
-        print()
-s=int(input())
-pattern(s)
+n=int(input())
+while(n>=1):
+    for i in range(1,n+1):
+        print(i,end='')
+    print()
+    n-=1
