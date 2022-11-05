@@ -1,6 +1,6 @@
 n=int(input())
-while(n>=1):
-    for i in range(1,n+1):
-        print(i,end='')
-    print()
-    n-=1
+for i in range(n):
+    l=['0']*n
+    l[i]=l[(len(l)-1)-(i)]='x'
+    l=''.join(l)
+    print(l)
